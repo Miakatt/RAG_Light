@@ -2,8 +2,8 @@
 #include <WiFiUdp.h>
 #include <Adafruit_NeoPixel.h>
 // Set WiFi credentials
-#define WIFI_SSID "Kikidoodle_Network"
-#define WIFI_PASS "Bottle$TORE101!"
+#define WIFI_SSID "SSID"
+#define WIFI_PASS "PASSWORD"
 // Set UDP Port
 #define UDP_PORT 4210
 // Set LED parameters
