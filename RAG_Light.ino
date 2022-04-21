@@ -119,7 +119,7 @@ void loop() {
     Serial.println(udpPacket);
    
    // Set Colours depending on Packet Character
-   setRAG(udpPacket[3]);  // strip of the LS|. Only pass the integer part of the incoming message.
+   setRAG(udpPacket[3]);  // strip off the LS|. Only pass the integer part of the incoming message.
    
    // Send a return packet
    
@@ -130,7 +130,7 @@ void loop() {
   // ********** USB ********** 
   if (serialSize>0) {
     usbPacket = Serial.readString();
-    setRAG(usbPacket.charAt(3));    // strip of the LS|. Only pass the integer part of the incoming message.
+    setRAG(usbPacket.charAt(3));    // strip off the LS|. Only pass the integer part of the incoming message.
     delay(100);
     Serial.write('X');
   }
